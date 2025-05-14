@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-display: 'Poppins', sans-serif;
+
+    --color-primary: #0ea5e9;
+    --color-secondary: #22c55e;
+    --color-background: #0f172a;
+    --color-surface: #1e293b;
+    --color-surfaceTone: #1a2333;
+    --color-danger: #ef4444;
+    --color-success: #10b981;
+    --color-accent: #facc15;
+    --color-text: #ffffff;
+    --color-text-muted: #6B7280;
+}
+
+@layer base {
+    body {
+        @apply bg-background text-text font-sans;
+    }
+
+    h1,
+    h2,
+    h3 {
+        @apply font-display;
+    }
+}
+
+@layer components {
+    .muted {
+        @apply text-text-muted;
+    }
+
+    .card {
+        @apply bg-surface p-6 rounded-xl shadow;
+    }
+
+    .login {
+        @apply bg-sky-600/20 sm:backdrop-blur-sm md:backdrop-blur-md backdrop-blur-lg p-6 ring-4 ring-sky-800/50 rounded-lg shadow-xl shadow-sky-400/20 transition duration-150;
+    }
+
+    .activated {
+        @apply bg-white/5 shadow-lg ring-2 ring-blue-400/50;
+    }
+    .btn {
+        @apply cursor-pointer px-6 py-3 rounded font-semibold;
+    }
+
+    .btn-primary {
+        @apply cursor-pointer px-6 py-3 rounded font-semibold bg-blue-500 hover:bg-blue-700;
+    }
+}
