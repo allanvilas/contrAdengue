@@ -1,0 +1,27 @@
+{
+    "name": "meuprojeto/plataforma-web",
+    "description": "Plataforma web acadêmica com PHP 8.4, PostgreSQL e componentes desacoplados do Laravel",
+    "type": "project",
+    "require": {
+      "php": "^8.2",
+      "illuminate/container": "^10.0",
+      "illuminate/database": "^10.0",
+      "illuminate/validation": "^10.0",
+      "illuminate/collections": "^10.0",
+      "illuminate/pipeline": "^10.0",
+      "bramus/router": "^1.6",
+      "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+      "psr-4": {
+        "App\\": "./"
+      }
+    },
+    "config": {
+      "optimize-autoloader": true,
+      "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+  }
+  
