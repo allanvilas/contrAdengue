@@ -1,8 +1,6 @@
 <?php
 require_once __DIR__ . '/layout/main.php';
 
-require_once __DIR__ . '/../bootstrap/app.php';
-require_once __DIR__ . '/../routes/users.php';
 ?>
 
 <body class="h-dvh">

@@ -45,6 +45,7 @@ services:
       - "5432:5432"
     networks:
       - app-network
+      - infra
 
 volumes:
   contra-dengue:
@@ -57,3 +58,5 @@ volumes:
 networks:
   app-network:
     driver: bridge
+  infra:
+    external: true

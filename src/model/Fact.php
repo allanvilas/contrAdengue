@@ -4,19 +4,21 @@ namespace App\Model;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Facts extends Model
+class Fact extends Model
 {
-    use SoftDeletes, HasFactory;
+    use SoftDeletes;
 
     protected $table = 'facts_options';
     protected $primaryKey = 'id';
+    protected $foreignKey = 'user_id';
     public $timestamps = true;
     protected $fillable = [
         'option',
         'description',
         'picture',
         'latitude',
-        'longitude'
+        'longitude',
+        'address'
     ];
 
     protected $hidden = [
@@ -24,4 +26,17 @@ class Facts extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    protected $dates = [
+        'created_at',
+        'updated_at',
+        'deleted_at'
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(\App\Models\Users::class);
+    }
+
+
 }

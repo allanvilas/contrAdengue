@@ -6,7 +6,7 @@ require_once __DIR__ . '/layout/main.php';
   <!-- Vídeo de fundo -->
   <video autoplay muted loop playsinline
     class="absolute top-0 left-0 w-full h-full object-cover z-0">
-    <source src="/../resources/img/brazil6.mp4" type="video/mp4">
+    <source src="/resources/img/brazil6.mp4" type="video/mp4">
     Seu navegador não suporta vídeos.
   </video>
 

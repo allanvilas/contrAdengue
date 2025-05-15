@@ -25,7 +25,7 @@ require_once __DIR__ . '/layout/main.php';
       </p>
     </div>
     <div class="bg-gray-700 aspect-video rounded-lg">
-        <img src="../resources/img/dengue_landing.png" alt="dengue pousando na pele de uma pessoa" class="w-full h-full rounded-lg">
+        <img src="/resources/img/dengue_landing.png" alt="dengue pousando na pele de uma pessoa" class="w-full h-full rounded-lg">
     </div> <!-- Espaço para imagem -->
   </section>
 

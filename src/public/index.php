@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/bootstrap/database.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../bootstrap/app.php';
 
 use Bramus\Router\Router;
 
@@ -9,19 +9,19 @@ $router = new Router();
 
 // Rota da landing page
 $router->get('/', function () {
-    require __DIR__ . '/views/landing.php';
+    require __DIR__ . '/../views/landing.php';
 });
 
 $router->get('/login', function () {
-    require __DIR__ . '/views/login.php';
+    require __DIR__ . '/../views/login.php';
 });
 
 $router->post('/plataforma', function () {
-    require __DIR__ . '/views/plataforma.php';
+    require __DIR__ . '/../views/plataforma.php';
 });
 
 $router->post('/debug', function () {
-    require __DIR__ . '/views/debug.php';
+    require __DIR__ . '/../views/debug.php';
 });
 
 // // Login
