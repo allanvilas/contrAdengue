@@ -11,47 +11,45 @@ require_once __DIR__ . '/layout/main.php';
     </header>
 
     <!-- Módulos -->
-    <section id="modes" class="h-dvh">
-        <div class="bg-surface py-16 px-4">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-10">🧱 Módulos da Plataforma</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div id="mod-citzen-button"
-                        class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300 activated">
-                        <h3 class="text-2xl font-semibold mb-2">🧍 Cidadão</h3>
-                        <ul class="text-lg list-disc list-inside">
-                            <li>Notificação de focos</li>
-                            <li>Envio de fotos com localização</li>
-                            <li>Agendamento de teleconsultas</li>
-                        </ul>
-                    </div>
-                    <div id="mod-acs-button"
-                        class="grayscale cursor-not-allowed p-6 rounded-xl shadow hover:bg-black/15 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
-                        <h3 class="text-2xl font-semibold mb-2">🧑‍⚕️ ACS</h3>
-                        <ul class="text-lg muted list-disc list-inside">
-                            <li>Roteiros otimizados</li>
-                            <li>Digitalização dos atendimentos</li>
-                            <li>Capacitação online</li>
-                        </ul>
-                    </div>
-                    <div id="mod-ace-button"
-                        class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
-                        <h3 class="text-2xl font-semibold mb-2">🦺 ACE</h3>
-                        <ul class="text-lg list-disc list-inside">
-                            <li>Inspeção digital</li>
-                            <li>Registro de ações</li>
-                            <li>Otimização por IA</li>
-                        </ul>
-                    </div>
-                    <div id="mod-manager-button"
-                        class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
-                        <h3 class="text-2xl font-semibold mb-2">🧑‍💼 Gestor</h3>
-                        <ul class="text-lg list-disc list-inside">
-                            <li>Painéis interativos</li>
-                            <li>Mapas de calor</li>
-                            <li>Relatórios em tempo real</li>
-                        </ul>
-                    </div>
+    <section id="modes" class="bg-surface py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">🧱 Módulos da Plataforma</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div id="mod-citzen-button"
+                    class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300 activated">
+                    <h3 class="text-2xl font-semibold mb-2">🧍 Cidadão</h3>
+                    <ul class="text-lg list-disc list-inside">
+                        <li>Notificação de focos</li>
+                        <li>Envio de fotos com localização</li>
+                        <li>Agendamento de teleconsultas</li>
+                    </ul>
+                </div>
+                <div id="mod-acs-button"
+                    class="grayscale cursor-not-allowed p-6 rounded-xl shadow hover:bg-black/15 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">🧑‍⚕️ ACS</h3>
+                    <ul class="text-lg muted list-disc list-inside">
+                        <li>Roteiros otimizados</li>
+                        <li>Digitalização dos atendimentos</li>
+                        <li>Capacitação online</li>
+                    </ul>
+                </div>
+                <div id="mod-ace-button"
+                    class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">🦺 ACE</h3>
+                    <ul class="text-lg list-disc list-inside">
+                        <li>Inspeção digital</li>
+                        <li>Registro de ações</li>
+                        <li>Otimização por IA</li>
+                    </ul>
+                </div>
+                <div id="mod-manager-button"
+                    class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">🧑‍💼 Gestor</h3>
+                    <ul class="text-lg list-disc list-inside">
+                        <li>Painéis interativos</li>
+                        <li>Mapas de calor</li>
+                        <li>Relatórios em tempo real</li>
+                    </ul>
                 </div>
             </div>
         </div>
