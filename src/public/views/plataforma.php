@@ -1,58 +1,61 @@
 <?php
 require_once __DIR__ . '/layout/main.php';
+
+require_once __DIR__ . '/../bootstrap/app.php';
+require_once __DIR__ . '/../routes/users.php';
 ?>
 
-<body>
-    <header class="bg-primary text-white py-4">
+<body class="h-dvh">
+    <div id="modes-controler-full"></div>
+    <header class="animated-background bg-linear-45 from-blue-500 to-fuchsia-500 text-white py-4 mb-8">
         <div class="container mx-auto p-2">
-            <h1 class="text-3xl font-bold">ContrADengue Plataforma de Controle de Zoonoses</h1>
-            <p class="text-lg">A solução digital para o controle de zoonoses no Brasil</p>
+            <h1 class="text-3xl font-bold">ContrADengue Plataforma de Controle de Endemias ⛔️🦟</h1>
+            <p class="text-lg">A solução digital para o controle de Endemias no Brasil</p>
         </div>
     </header>
 
     <!-- Módulos -->
-    <section id="modes" class="h-dvh">
-        <div class="bg-surface py-16 px-4">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-10">🧱 Módulos da Plataforma</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div id="mod-citzen-button"
-                        class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300 activated">
-                        <h3 class="text-2xl font-semibold mb-2">🧍 Cidadão</h3>
-                        <ul class="text-lg list-disc list-inside">
-                            <li>Notificação de focos</li>
-                            <li>Envio de fotos com localização</li>
-                            <li>Agendamento de teleconsultas</li>
-                        </ul>
-                    </div>
-                    <div id="mod-acs-button"
-                        class="grayscale cursor-not-allowed p-6 rounded-xl shadow hover:bg-black/15 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
-                        <h3 class="text-2xl font-semibold mb-2">🧑‍⚕️ ACS</h3>
-                        <ul class="text-lg muted list-disc list-inside">
-                            <li>Roteiros otimizados</li>
-                            <li>Digitalização dos atendimentos</li>
-                            <li>Capacitação online</li>
-                        </ul>
-                    </div>
-                    <div id="mod-ace-button"
-                        class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
-                        <h3 class="text-2xl font-semibold mb-2">🦺 ACE</h3>
-                        <ul class="text-lg list-disc list-inside">
-                            <li>Inspeção digital</li>
-                            <li>Registro de ações</li>
-                            <li>Otimização por IA</li>
-                        </ul>
-                    </div>
-                    <div id="mod-manager-button"
-                        class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
-                        <h3 class="text-2xl font-semibold mb-2">🧑‍💼 Gestor</h3>
-                        <ul class="text-lg list-disc list-inside">
-                            <li>Painéis interativos</li>
-                            <li>Mapas de calor</li>
-                            <li>Relatórios em tempo real</li>
-                        </ul>
-                    </div>
+    <section id="modes" class="z-10 will-change-transform will-change-opacity transition-all duration-500 ease-in-out">
+        <div class="max-w-6xl mx-auto bg-surface p-6 rounded-xl">
+            <h2 class="text-3xl font-bold text-center mb-10">🧱 Módulos da Plataforma</h2>
+            <div id="modes-container" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div id="mod-citzen-button"
+                    class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300 activated">
+                    <h3 class="text-2xl font-semibold mb-2">🧍 Cidadão</h3>
+                    <ul class="text-lg list-disc list-inside">
+                        <li>Notificação de focos</li>
+                        <li>Envio de fotos com localização</li>
+                        <li>Agendamento de teleconsultas</li>
+                    </ul>
                 </div>
+                <div id="mod-acs-button"
+                    class="grayscale cursor-not-allowed p-6 rounded-xl shadow hover:bg-black/15 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">🧑‍⚕️ ACS</h3>
+                    <ul class="text-lg muted list-disc list-inside">
+                        <li>Roteiros otimizados</li>
+                        <li>Digitalização dos atendimentos</li>
+                        <li>Capacitação online</li>
+                    </ul>
+                </div>
+                <div id="mod-ace-button"
+                    class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">🦺 ACE</h3>
+                    <ul class="text-lg list-disc list-inside">
+                        <li>Inspeção digital</li>
+                        <li>Registro de ações</li>
+                        <li>Otimização por IA</li>
+                    </ul>
+                </div>
+                <div id="mod-manager-button"
+                    class="cursor-pointer p-6 rounded-xl shadow hover:bg-white/5 hover:shadow-lg hover:ring-2 hover:ring-blue-400/50 transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-2">🧑‍💼 Gestor</h3>
+                    <ul class="text-lg list-disc list-inside">
+                        <li>Painéis interativos</li>
+                        <li>Mapas de calor</li>
+                        <li>Relatórios em tempo real</li>
+                    </ul>
+                </div>
+                <div id="modes-controler"></div>
             </div>
         </div>
     </section>
@@ -431,14 +434,16 @@ require_once __DIR__ . '/layout/main.php';
 
         </div>
     </section>
-    <!-- Módulo Gestor -->
 
+    <!-- Módulo Gestor -->
     <section id="mod-manager" class="" hidden>
-        <div class="max-w-5xl mx-auto py-16 px-4">
-            <h2 class="text-3xl font-bold mb-6 text-secondary text-center">🗺️ Mapa de Calor</h2>
+        
+        <div class="text-center my-8">
+            <h3 class="text-4xl font-bold text-primary">Area do Gestor</h3>
             <p class="text-lg muted mb-6 text-center">Visualize os focos de dengue em tempo real</p>
-            <p class="text-lg muted mb-6 text-center">Clique no mapa para adicionar um foco</p>
         </div>
+        
+        <h2 class="text-3xl font-bold mb-6 text-secondary text-center">🗺️ Mapa de Calor</h2>
     </section>
 
     <!-- Leaflet -->
@@ -447,6 +452,14 @@ require_once __DIR__ . '/layout/main.php';
 
     <!-- ocorrencias -->
     <section id="mod-citzen" id="fact-list" class="max-w-5xl mx-auto py-16 px-4 gap-y-8">
+
+        <div class="text-center mb-8">
+            <h3 class="text-4xl font-bold text-primary">Bem-vindo, Cidadão!</h3>
+            <p class="text-lg text-muted">Ajude no combate à dengue registrando ocorrências abaixo.</p>
+        </div>
+    
+        <h2 class="text-3xl font-bold my-6 text-secondary text-center">📝 Ocorrências</h2>
+
         <!-- Botão para abrir o modal -->
         <button
             class="bg-blue-600 text-white text-2xl p-3 mb-6 rounded-tl-md rounded-br-md hover:bg-blue-700 hover:ring-4 hover:ring-blue-100/10 transition"
@@ -483,42 +496,41 @@ require_once __DIR__ . '/layout/main.php';
     <!-- cidadao formulário de ocorrencias -->
     <!-- <section id="mod-citzen-fact-form" class="relative max-w-2xl mx-auto py-16 px-4 z-10"> -->
     <section id="mod-citzen-fact-form"
-        class="fixed inset-0 bg-black bg-opacity-50 flex flex-wrap items-center justify-center hidden z-50">
-        <form method="POST" class="flex justify-center sm:basis-4/12 bg-surface p-8 rounded-xl shadow-md">
-            <fieldset class="flex flex-col gap-4">
+        class="fixed inset-0 bg-black/40 backdrop-blur-sm flex flex-wrap items-center justify-center hidden z-50">
+        <form method="POST" class="flex justify-center sm:basis-4/12 bg-surface rounded-xl shadow-md">
+            <fieldset class="flex flex-col gap-4 my-10">
                 <legend class="text-lg font-semibold mb-2 ">Registrar Ocorrência</legend>
 
-                <select name="fact.option" class="p-3 bg-surface rounded-md border border-surfaceHighlight shadow-sm">
+                <select name="fact.option" class="p-3 bg-surface rounded-md border-none outline-none ring-2 ring-blue-200/40 focus:ring-blue-200/60 shadow-sm">
                     <option value="foco_de_dengue">Foco de Dengue</option>
                     <option value="sintomas">Sintomas</option>
                     <option value="outros">Outra Ocorrência</option>
                 </select>
 
                 <input type="file" accept="image/png" name="fact.picture"
-                    class="p-3 rounded-md border border-surfaceHighlight shadow-sm" disabled />
+                    class="grayscale file:text-gray-500 p-3 rounded-md border-none outline-none ring-2 ring-blue-200/40 shadow-sm" disabled />
 
-                <textarea type="text" name="fact.description" rows="4" placeholder="Digite a ocorrência"
-                    class="p-3 bg-surface rounded-md border border-surfaceHighlight shadow-sm" />
-                </textarea>
+                <textarea type="text" name="fact.description" rows="4" placeholder="Digite a ocorrência" 
+                    class="placeholder:text-gray-500 placeholder:italic p-3 bg-surface rounded-md border-none outline-none ring-2 ring-blue-200/40 focus:ring-blue-200/60 shadow-sm" /></textarea>
 
-                <label id="geo_randomness_label" for="geo_randomness" class="cursor-pointer p-3 rounded-md border border-gray-300 shadow-sm max-w-52
-                        hover:bg-blue-600 transition
+                <label id="geo_randomness_label" for="geo_randomness" class="bg-blue-600 cursor-pointer p-3 rounded-md border border-blue-300/40 shadow-sm max-w-52
+                        hover:bg-blue-700 transition
                       ">
-                    <input type="checkbox" name="fact.geo_randomness" id="geo_randomness" class="hidden peer" />
+                    <input type="checkbox" name="fact.geo_randomness" id="geo_randomness" class="hidden peer" checked/>
                     Geolocalização aleatória
                 </label>
 
                 <!-- Se o checkbox estiver marcado, os campos de latitude e longitude serão habilitados -->
                 <fieldset id="geoInputFields"
-                    class="bg-surfaceTone p-8 my-4 rounded-xl shadow-md flex flex-col sm:flex-row gap-4">
+                    class="hidden bg-surfaceTone p-8 my-4 rounded-xl shadow-md flex flex-col sm:flex-row gap-4">
                     <legend class="text-md font-semibold mb-2 ">Geolocalização</legend>
                     <input type="text" name="fact.latitude" placeholder="Latitude"
-                        class="p-3 bg-surface rounded-md border border-surfaceHighlight shadow-sm" />
+                        class="p-3 bg-surface rounded-md border border-none outline-none ring-2 ring-blue-200/40 shadow-sm" />
                     <input type="text" name="fact.longitude" placeholder="Longitude"
-                        class="p-3 bg-surface rounded-md border border-surfaceHighlight shadow-sm" />
+                        class="p-3 bg-surface rounded-md border border-none outline-none ring-2 ring-blue-200/40 shadow-sm" />
                 </fieldset>
                 <div class="flex flex-row">
-                    <button type="submit"
+                    <button id="mod-citzen-addfact"  type="submit"
                         class="basis-8/12 bg-blue-600 text-white p-3 mb-6 rounded-l-md hover:bg-blue-700 transition">
                         Registrar
                     </button>
@@ -531,6 +543,31 @@ require_once __DIR__ . '/layout/main.php';
             </fieldset>
         </form>
     </section>
+
+    <section id="accept-fact-delete">
+        <div class="fixed inset-0 bg-black bg-opacity-50 flex flex-wrap items-center hidden justify-center z-50">
+            <form method="POST" class="flex justify-center sm:basis-4/12 bg-surface p-8 rounded-xl shadow-md">
+                <fieldset class="flex flex-col gap-4">
+                    <legend class="text-lg font-semibold mb-2 ">Excluir Ocorrência</legend>
+
+                    <p>Você tem certeza que deseja excluir esta ocorrência?</p>
+
+                    <div class="flex flex-row">
+                        <button id="mod-citzen-deletefact" type="submit"
+                            class="basis-8/12 bg-blue-600 text-white p-3 mb-6 rounded-l-md hover:bg-blue-700 transition">
+                            Excluir
+                        </button>
+                        <button class="basis-4/12 bg-red-600 text-white p-3 mb-6 rounded-r-md"
+                            onclick="document.getElementById('accept-fact-delete').classList.add('hidden')">
+                            Fechar
+                        </button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="/../resources/js/cGxhdGFmb3JtYQ==.js"></script>
 

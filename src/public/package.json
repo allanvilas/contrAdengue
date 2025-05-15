@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tailwindcss -i ./resources/css/ZXN0aWxvIGRvIHNpdGUgdGFpbHdpbmQtY29uZmln.css -o ./resources/dist/ZXN0aWxvIGRvIHNpdGUgdGFpbHdpbmQtY29uZmln.css --watch",
+    "build": "tailwindcss -i ./resources/css/ZXN0aWxvIGRvIHNpdGUgdGFpbHdpbmQtY29uZmln.css -o ./resources/dist/ZXN0aWxvIGRvIHNpdGUgdGFpbHdpbmQtY29uZmln.css --minify"
   },
   "keywords": [],
   "author": "",
