@@ -23,7 +23,7 @@ services:
     container_name: contra-dengue-nginx
     restart: unless-stopped
     ports:
-      - "80"
+      - "8013:80"
     volumes:
       - ../src:/var/www
       - ./nginx:/etc/nginx/conf.d
@@ -31,8 +31,6 @@ services:
       - contra-dengue
     networks:
       - app-network
-      - infra
-
   contra-dengue-db:
     image: postgres:latest
     container_name: contra-dengue-db
@@ -44,7 +42,7 @@ services:
     volumes:
       - contra-dengue-db-data:/var/lib/postgresql/data
     ports:
-      - "127.0.0.1:5432:5432"
+      - "5432:5432"
     networks:
       - app-network
 
@@ -59,5 +57,3 @@ volumes:
 networks:
   app-network:
     driver: bridge
-  infra:
-    external: true
