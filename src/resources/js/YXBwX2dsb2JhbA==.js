@@ -1,0 +1,1 @@
+document.addEventListener("keydown",function(n){if(n.ctrlKey&&["c","u","s"].includes(n.key.toLowerCase())||n.key==="F12"){n.preventDefault()}});

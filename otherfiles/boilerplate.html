@@ -1,0 +1,17 @@
+<!-- center modal boilerplate -->
+<div id="accept-fact-delete" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center">
+    <div class="bg-surface rounded-lg shadow-lg p-6 w-96">
+        <h2 class="text-lg font-semibold mb-4">Excluir Ocorrência</h2>
+        <p class="mb-4">Você tem certeza que deseja excluir esta ocorrência?</p>
+        <div class="flex flex-row">
+            <button id="mod-citzen-deletefact" type="submit"
+                class="basis-8/12 bg-red-600 text-white p-3 mb-6 rounded-l-md hover:bg-red-700 transition">
+                Excluir
+            </button>
+            <button class="basis-4/12 bg-blue-600 text-white p-3 mb-6 rounded-r-md"
+                onclick="document.getElementById('accept-fact-delete').classList.add('hidden')">
+                Fechar
+            </button>
+        </div>
+    </div>
+</div>
