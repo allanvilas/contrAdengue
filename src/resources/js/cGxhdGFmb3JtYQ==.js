@@ -371,8 +371,13 @@ function applyNormalMode() {
     title.classList.remove('hidden');
 
     modesContainer.classList.add('grid', 'md:grid-cols-2', 'lg:grid-cols-4', 'gap-6');
-    modesContainer.classList.remove('flex', 'flex-row', 'items-center', 'justify-center', 'gap-4', 'flex-wrap', 'p-2', 'm-1');
-
+    modesContainer.classList.remove('flex', 'flex-row', 'items-center', 'justify-center', 'gap-4', 'flex-wrap');
+    modesContainer.querySelectorAll('div').forEach(div => {
+        div.classList.add('p-6','rounded-xl');
+        div.classList.remove('py-2','rounded-md');
+        div.querySelector('h3').classList.add('text-2xl');
+        div.querySelector('h3').classList.remove('text-lg');
+    }); 
     currentMode = 'normal';
 }
 
@@ -389,17 +394,32 @@ function applyReducedMode() {
     title.classList.add('hidden');
 
     modesContainer.classList.remove('grid', 'md:grid-cols-2', 'lg:grid-cols-4', 'gap-6');
-    modesContainer.classList.add('flex', 'flex-row', 'items-center', 'justify-center', 'gap-4', 'flex-wrap', 'p-2', 'm-1');
-
+    modesContainer.classList.add('flex', 'flex-row', 'items-center', 'justify-center', 'gap-4', 'flex-wrap');
+    modesContainer.querySelectorAll('div').forEach(div => {
+        div.classList.remove('p-6','rounded-xl');
+        div.classList.add('py-2','rounded-md');
+        div.querySelector('h3').classList.remove('text-2xl');
+        div.querySelector('h3').classList.add('text-lg');
+    }); 
     currentMode = 'reduced';
 }
 
 function controlToggleMenuMode() {
-    if (isTopControllerVisible || (isTopControllerVisible && isBottomControllerVisible)) {
-        applyNormalMode();
-    } else if (!isBottomControllerVisible && !isTopControllerVisible) {
+    // if (isTopControllerVisible || (isTopControllerVisible && isBottomControllerVisible)) {
+    //     applyNormalMode();
+    // } else if (!isBottomControllerVisible && !isTopControllerVisible) {
+    //     applyReducedMode();
+    // }
+
+    if(!isBottomControllerVisible) {
         applyReducedMode();
-    } 
+    } else {
+        if (isTopControllerVisible) {
+            applyReducedMode();
+            return;
+        }
+        applyNormalMode();
+    }
 }
 
 // Criar Observer
