@@ -4,16 +4,16 @@ require_once __DIR__ . '/layout/main.php';
 ?>
 
 <body class="h-dvh">
-    <div id="modes-controler-full"></div>
     <header class="animated-background bg-linear-45 from-blue-500 to-fuchsia-500 text-white py-4 mb-8">
         <div class="container mx-auto p-2">
             <h1 class="text-3xl font-bold">ContrADengue Plataforma de Controle de Endemias ⛔️🦟</h1>
             <p class="text-lg">A solução digital para o controle de Endemias no Brasil</p>
         </div>
     </header>
-
+    
+    <div id="modes-controler-full"></div>
     <!-- Módulos -->
-    <section id="modes" class="z-10 will-change-transform will-change-opacity transition-all duration-500 ease-in-out">
+    <section id="modes" class="z-10 will-change-transform will-change-opacity transition-all duration-500 ease-in-out py-60">
         <div class="max-w-6xl mx-auto bg-surface p-6 rounded-xl">
             <h2 class="text-3xl font-bold text-center mb-10">🧱 Módulos da Plataforma</h2>
             <div id="modes-container" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -53,10 +53,11 @@ require_once __DIR__ . '/layout/main.php';
                         <li>Relatórios em tempo real</li>
                     </ul>
                 </div>
-                <div id="modes-controler"></div>
             </div>
         </div>
     </section>
+
+    <div id="modes-controler" class="pt-96"></div>
 
     <!-- Módulo ACE -->
     <section id="mod-ace" class="" hidden>
@@ -98,7 +99,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -122,7 +123,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -145,7 +146,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -168,7 +169,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -191,7 +192,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -214,7 +215,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -237,7 +238,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -260,7 +261,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -283,7 +284,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -306,7 +307,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -329,7 +330,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -352,7 +353,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -375,7 +376,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -398,7 +399,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
@@ -421,7 +422,7 @@ require_once __DIR__ . '/layout/main.php';
                 </div>
                 <div class="flex flex-row justify-between">
                     <button
-                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adidionar
+                        class="grow py-2 text-1xl font-bold text-blue-900 rounded-bl-xl bg-blue-500 hover:text-blue-300 hover:ring-4 hover:ring-blue-200/20 hover:bg-blue-600 transition duration-200 active:bg-blue-700 active:text-blue-100">Adicionar
                     </button>
                     <button
                         class="grow py-2 text-1xl font-bold text-yellow-900 bg-yellow-500 hover:text-yellow-300 hover:ring-4 hover:ring-yellow-200/20 hover:bg-yellow-600 transition duration-200 active:bg-yellow-700 active:text-yellow-100">Pausar</button>
