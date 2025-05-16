@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Model;
+
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -13,6 +14,7 @@ class Fact extends Model
     protected $foreignKey = 'user_id';
     public $timestamps = true;
     protected $fillable = [
+        'user_id',
         'option',
         'description',
         'picture',
@@ -35,7 +37,7 @@ class Fact extends Model
 
     public function user()
     {
-        return $this->belongsTo(\App\Models\Users::class);
+        return $this->belongsTo(\App\Models\User::class);
     }
 
 

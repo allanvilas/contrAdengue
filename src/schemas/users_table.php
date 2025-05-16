@@ -6,7 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 require_once __DIR__ . '/../bootstrap/app.php';
 require_once __DIR__ . '/../vendor/autoload.php';
 
-Capsule::schema()->dropIfExists('users');
+Capsule::statement('DROP TABLE IF EXISTS users CASCADE');
 Capsule::schema()->create('users', function (Blueprint $table) {
     $table->increments('id');
     $table->string('name');
