@@ -1,0 +1,6 @@
+/src/vendor
+/src/node_modules
+/.env
+.env
+/src/resources/dist
+src/resources/dist
