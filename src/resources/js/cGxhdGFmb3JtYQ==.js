@@ -405,21 +405,23 @@ function applyReducedMode() {
 }
 
 function controlToggleMenuMode() {
-    // if (isTopControllerVisible || (isTopControllerVisible && isBottomControllerVisible)) {
-    //     applyNormalMode();
-    // } else if (!isBottomControllerVisible && !isTopControllerVisible) {
-    //     applyReducedMode();
-    // }
-
-    if(!isBottomControllerVisible) {
-        applyReducedMode();
-    } else {
-        if (isTopControllerVisible) {
-            applyReducedMode();
-            return;
-        }
+    // menu collapse eoriginal
+    if (isTopControllerVisible || (isTopControllerVisible && isBottomControllerVisible)) {
         applyNormalMode();
+    } else if (!isBottomControllerVisible && !isTopControllerVisible) {
+        applyReducedMode();
     }
+
+    //menu collapse alternativo
+    // if(!isBottomControllerVisible) {
+    //     applyReducedMode();
+    // } else {
+    //     if (isTopControllerVisible) {
+    //         applyReducedMode();
+    //         return;
+    //     }
+    //     applyNormalMode();
+    // }
 }
 
 // Criar Observer
