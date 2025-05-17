@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // fecha formulário
         form.classList.add('hidden')
-        form.reset();
+        //form.reset();
 
         // Adicionar card visualmente
         // Dá um pequeno delay para garantir que o DOM "percebeu" o novo item
