@@ -28,6 +28,21 @@ Desenvolver uma solução tecnológica inovadora que:
 - Digitalize e otimize o trabalho de agentes de saúde;
 - Forneça dados em tempo real para gestores;
 - Reduza custos com internações e tratamentos através da prevenção.
+ 
+---
+
+## Revisitação do projeto original e compartilhamento sobre o desenvolvimento da Plataforma ContrADengue: 
+
+Após a conclusão da primeira versão, o produto entregue ainda não atende completamente ao escopo originalmente definido no projeto original da Plataforma ContrADengue.
+
+Os principais pontos observados são:
+
+1. Algumas funcionalidades-chave (por exemplo: o módulo ACS; o acesso a orientações e teleconsultas médicas do módulo Cidadão; as opções de digitalização dos registros de
+focos de mosquito em atividades de campo do módulo ACE; e as opção de painéis interativos e de relatórios analíticos do módulo Gestor) ainda não foram implementadas;
+2. Requisitos de desempenho sob cargas elevadas não foram testados em ambiente real, limitando nossa visão sobre estabilidade em produção.
+
+Essas lacunas se devem, em grande parte, à complexidade dos requisitos e ao prazo reduzido para entrega desta versão inicial. 
+Entretanto, entendemos que esses pontos são fundamentais para assegurar que a plataforma cumpra seus objetivos de negócios e proporcione a melhor experiência ao usuário. Futuramente prosseguiremos com o desenvolvimento em ciclos iterativos, contemplando: priorização das funcionalidades pendentes e correções de usabilidade; e testes de carga e ajustes de performance.
 
 ---
 
