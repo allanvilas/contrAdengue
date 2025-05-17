@@ -38,6 +38,19 @@ Integrando tecnologias como **inteligência artificial, análise de dados, telem
 
 ---
 
+<div
+    style="display:flex; flex-wrap:wrap; justify-content:center;"
+> 
+<img src="https://contra-dengue.thewool.dev.br/resources/docs/img/ace.png" style="width:30rem;">
+<img src="https://contra-dengue.thewool.dev.br/resources/docs/img/landing.png" style="width:30rem;">
+<img src="https://contra-dengue.thewool.dev.br/resources/docs/img/gestor.png" style="width:30rem;">
+<img src="https://contra-dengue.thewool.dev.br/resources/docs/img/login.png" style="width:30rem;">
+<img src="https://contra-dengue.thewool.dev.br/resources/docs/img/modulos.png" style="width:30rem;">
+<img src="https://contra-dengue.thewool.dev.br/resources/docs/img/ocorrencias.png" style="width:30rem;">
+</div>
+
+---
+
 ## 🎯 Objetivo
 
 Desenvolver uma solução tecnológica inovadora que:
