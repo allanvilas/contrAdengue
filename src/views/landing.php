@@ -29,6 +29,14 @@ require_once __DIR__ . '/layout/main.php';
     </div> <!-- Espaço para imagem -->
   </section>
 
+  <section class="flex justify-center items-center">
+    <div class="basis-6/12">
+      <video controls>
+        <source src="/resources/docs/video/project.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
   <!-- Módulos -->
   <section class="bg-surface py-16 px-4">
     <div class="max-w-6xl mx-auto">
