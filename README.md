@@ -36,6 +36,15 @@ Curso de Tecnologia em Análise e Desenvolvimento de Sistemas
 A **contrAdengue** é uma plataforma tecnológica desenvolvida como **SaaS (Software como Serviço)** voltada para órgãos públicos de saúde, com o objetivo de **otimizar a prevenção e o combate à dengue no Brasil**.  
 Integrando tecnologias como **inteligência artificial, análise de dados, telemedicina e conectividade móvel**, a solução oferece suporte completo a **cidadãos, agentes de saúde e gestores públicos**.
 
+### Vídeo explicativo sobre o projeto:
+<div
+    style="display:flex; flex-wrap:wrap; justify-content:center;"
+> 
+<video controls>
+  <source src="https://contra-dengue.thewool.dev.br/resources/docs/video/project.mp4" type="video/mp4">
+</video>
+</div>
+
 ---
 
 <div
