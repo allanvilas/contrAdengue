@@ -21,6 +21,8 @@ Curso de Tecnologia em Análise e Desenvolvimento de Sistemas
   </a>
 </div>
 
+
+
 ## 👥 Integrantes do Grupo
 
 - Allan Vilas Boas  
@@ -40,9 +42,10 @@ Integrando tecnologias como **inteligência artificial, análise de dados, telem
 <div
     style="display:flex; flex-wrap:wrap; justify-content:center;"
 > 
-<video controls>
-  <source src="https://contra-dengue.thewool.dev.br/resources/docs/video/project.mp4" type="video/mp4">
-</video>
+
+https://github.com/user-attachments/assets/1cb4e396-b28c-4ba1-b216-35d8b25fa1df
+
+
 </div>
 
 ---
@@ -59,6 +62,9 @@ Integrando tecnologias como **inteligência artificial, análise de dados, telem
 </div>
 
 ---
+
+
+
 
 ## 🎯 Objetivo
 
