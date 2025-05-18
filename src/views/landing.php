@@ -29,9 +29,10 @@ require_once __DIR__ . '/layout/main.php';
     </div> <!-- Espaço para imagem -->
   </section>
 
-  <section class="flex justify-center items-center">
-    <div class="basis-6/12">
-      <video controls>
+  <section class="flex flex-wrap justify-center items-center my-10 mx-2 gap-y-10">
+    <h3 class="text-4xl fon-semibold basis-full text-center">Vídeo explicativo sobre o projeto:</h3>
+    <div class="sm:basis-6/12 animated-background bg-linear-45 from-blue-500 via-rose-500 to-fuchsia-500 p-1 rounded-xl shadow-lg/30 shadow-white">
+      <video controls class="rounded-xl">
         <source src="/resources/docs/video/project.mp4" type="video/mp4">
       </video>
     </div>
