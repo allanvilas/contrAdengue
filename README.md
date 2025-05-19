@@ -128,13 +128,13 @@ Entretanto, entendemos que esses pontos são fundamentais para assegurar que a p
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Frontend**: HTML + HTMX + TailwindCSS  
-- **Backend**: PHP  
-- **Hospedagem**: VPS (Servidor Virtual Privado)  
-- **Banco de Dados**: PostgreSQL  
-- **Geolocalização e Mapas**: Leaflet.js  
-- **Análise de Dados & IA**: Python (módulo separado)  
-- **Telemedicina**: Integração via API de terceiros
+- **Frontend**: HTML + HTMX + TailwindCSS;
+- **Backend**: PHP;
+- **Hospedagem**: VPS (Servidor Virtual Privado);
+- **Banco de Dados**: PostgreSQL;
+- **Geolocalização e Mapas**: Leaflet.js;
+- **Análise de Dados & IA**: Python (módulo separado);
+- **Telemedicina**: Integração via API de terceiros.
 
 ---
 
