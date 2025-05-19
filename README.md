@@ -3,26 +3,6 @@
 **Projeto Integrador IV - SENAC - 2025**  
 Curso de Tecnologia em Análise e Desenvolvimento de Sistemas
 
-<div style="display:flex; justify-content:center;">
-  <a style="
-            background-color: #4989d1;
-            color: #fff;
-            border-radius: 4px;
-            text-align: center;
-            padding: 12px 20px 12px 20px;
-            background-color: #4989d1;
-            color: #fff;
-            border-radius: 4px;
-            font-size: 1.5em;
-            text-shadow: 2px 2px 5px #112338;
-            text-decoration-line: none;
-            text-align: center;" href="https://contra-dengue.thewool.dev.br/" target="_blank">
-      Clique aqui para a demonstração online da Plataforma.
-  </a>
-</div>
-
-
-
 ## 👥 Integrantes do Grupo
 
 - Allan Vilas Boas  
