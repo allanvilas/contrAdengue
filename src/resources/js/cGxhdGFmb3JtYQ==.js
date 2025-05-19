@@ -367,14 +367,15 @@ function applyNormalMode() {
     containerWrapper.classList.add('max-w-6xl', 'mx-auto', 'p-6');
     containerWrapper.classList.remove('rounded-b-xl', 'ring-4', 'ring-blue-200/20');
 
-    modesSection.classList.remove('fixed', 'top-0', 'left-0', 'flex', 'items-center', 'justify-center', 'w-screen');
+    modesSection.classList.add('py-60');
+    modesSection.classList.remove('py-2','fixed', 'top-0', 'left-0', 'flex', 'items-center', 'justify-center', 'w-screen');
     title.classList.remove('hidden');
 
     modesContainer.classList.add('grid', 'md:grid-cols-2', 'lg:grid-cols-4', 'gap-6');
     modesContainer.classList.remove('flex', 'flex-row', 'items-center', 'justify-center', 'gap-4', 'flex-wrap');
     modesContainer.querySelectorAll('div').forEach(div => {
         div.classList.add('p-6','rounded-xl');
-        div.classList.remove('py-2','rounded-md');
+        div.classList.remove('px-2','py-2','rounded-md');
         div.querySelector('h3').classList.add('text-2xl');
         div.querySelector('h3').classList.remove('text-lg');
     }); 
@@ -390,14 +391,15 @@ function applyReducedMode() {
     containerWrapper.classList.remove('max-w-6xl', 'mx-auto', 'p-6');
     containerWrapper.classList.add('rounded-b-xl', 'ring-4', 'ring-blue-200/20');
 
-    modesSection.classList.add('fixed', 'top-0', 'left-0', 'flex', 'items-center', 'justify-center', 'w-screen');
+    modesSection.classList.remove('py-60');
+    modesSection.classList.add('py-2','fixed', 'top-0', 'left-0', 'flex', 'items-center', 'justify-center', 'w-screen');
     title.classList.add('hidden');
 
     modesContainer.classList.remove('grid', 'md:grid-cols-2', 'lg:grid-cols-4', 'gap-6');
     modesContainer.classList.add('flex', 'flex-row', 'items-center', 'justify-center', 'gap-4', 'flex-wrap');
     modesContainer.querySelectorAll('div').forEach(div => {
         div.classList.remove('p-6','rounded-xl');
-        div.classList.add('py-2','rounded-md');
+        div.classList.add('px-2', 'py-2','rounded-md');
         div.querySelector('h3').classList.remove('text-2xl');
         div.querySelector('h3').classList.add('text-lg');
     }); 

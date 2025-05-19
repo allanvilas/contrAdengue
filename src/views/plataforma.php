@@ -3,6 +3,7 @@ require_once __DIR__ . '/layout/main.php';
 
 ?>
 
+<div id="modes-controler-full"></div>
 <body class="h-dvh">
     <header class="animated-background bg-linear-45 from-blue-500 to-fuchsia-500 text-white py-4 mb-8">
         <div class="container mx-auto p-2">
@@ -11,9 +12,8 @@ require_once __DIR__ . '/layout/main.php';
         </div>
     </header>
     
-    <div id="modes-controler-full"></div>
     <!-- Módulos -->
-    <section id="modes" class="z-10 will-change-transform will-change-opacity transition-all duration-500 ease-in-out py-60">
+    <section id="modes" class="z-10 will-change-transform will-change-opacity transition-all duration-3000 ease-in-out py-60">
         <div class="max-w-6xl mx-auto bg-surface p-6 rounded-xl">
             <h2 class="text-3xl font-bold text-center mb-10">🧱 Módulos da Plataforma</h2>
             <div id="modes-container" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
