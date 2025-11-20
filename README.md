@@ -150,6 +150,47 @@ A plataforma contrAdengue respeita a **Lei Geral de Proteção de Dados (LGPD)**
 Não armazena prontuários médicos e atua como sistema complementar às soluções oficiais de saúde.
 
 ---
+# 📦 Deploy da Aplicação (Docker + Docker Compose)
+
+Esta aplicação é construída em **PHP puro**, utilizando Docker para empacotamento e execução.  
+O ambiente inclui:
+
+- PHP-FPM (a partir do Dockerfile)
+- Nginx
+- PostgreSQL
+- Variáveis de ambiente carregadas via `.env`
+
+---
+
+## ✅ 1. Requisitos do Host
+
+Antes de realizar o deploy, o servidor ou máquina local precisa possuir:
+
+### **Obrigatórios**
+- **Docker 24+**
+- **Docker Compose 2+**
+- **PHP 8+** (somente para rodar comandos CLI locais se necessário)
+
+### **Opcionais (mas recomendados)**
+- Git (para clonar o repositório)
+- Node.js + npm (caso você tenha algum build frontend, mas não obrigatório)
+
+---
+
+## 🧩 2. Criar o arquivo `.env`
+
+A aplicação utiliza variáveis de ambiente fornecidas pelo `docker-compose.yml`.
+
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+DB_DRIVER=pgsql
+DB_HOST=contra-dengue-db
+DB_PORT=5432
+DB_DATABASE=contra_dengue
+DB_USERNAME=postgres
+DB_PASSWORD=sua_senha_aqui
+```
 
 ## 📜 Licença
 
