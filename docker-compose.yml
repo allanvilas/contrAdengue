@@ -1,0 +1,63 @@
+services:
+  contra-dengue:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: contra-dengue
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - .:/var/www
+    networks:
+      - app-network
+    environment:
+      - DB_CONNECTION='${DB_DRIVER}'
+      - DB_HOST='${DB_HOST}'
+      - DB_PORT='${DB_PORT}'
+      - DB_DATABASE='${DB_DATABASE}'
+      - DB_USERNAME='${DB_USERNAME}'
+      - DB_PASSWORD='${DB_PASSWORD}'
+
+  contra-dengue-nginx:
+    image: nginx:latest
+    container_name: contra-dengue-nginx
+    restart: unless-stopped
+    ports:
+      - "8013:80"
+    volumes:
+      - .:/var/www
+      - ./config/nginx:/etc/nginx/conf.d
+    depends_on:
+      - contra-dengue
+    networks:
+      - app-network
+      - infra
+  contra-dengue-db:
+    image: postgres:latest
+    container_name: contra-dengue-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - contra-dengue-db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+      - infra
+
+volumes:
+  contra-dengue:
+    driver: local
+  contra-dengue-nginx:
+    driver: local
+  contra-dengue-db-data:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge
+  infra:
+    external: true
