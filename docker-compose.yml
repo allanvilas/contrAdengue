@@ -7,16 +7,16 @@ services:
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
-      - ../src:/var/www
+      - .:/var/www
     networks:
       - app-network
     environment:
-      - DB_CONNECTION=pgsql
-      - DB_HOST=contra-dengue-db
-      - DB_PORT=5432
-      - DB_DATABASE=contra_dengue
-      - DB_USERNAME=postgres
-      - DB_PASSWORD=hmTpKwBbfDAFS2SlaX75V6pbqhZbVb
+      - DB_CONNECTION='${DB_DRIVER}'
+      - DB_HOST='${DB_HOST}'
+      - DB_PORT='${DB_PORT}'
+      - DB_DATABASE='${DB_DATABASE}'
+      - DB_USERNAME='${DB_USERNAME}'
+      - DB_PASSWORD='${DB_PASSWORD}'
 
   contra-dengue-nginx:
     image: nginx:latest
@@ -25,8 +25,8 @@ services:
     ports:
       - "8013:80"
     volumes:
-      - ../src:/var/www
-      - ./nginx:/etc/nginx/conf.d
+      - .:/var/www
+      - ./config/nginx:/etc/nginx/conf.d
     depends_on:
       - contra-dengue
     networks:
@@ -37,9 +37,9 @@ services:
     container_name: contra-dengue-db
     restart: unless-stopped
     environment:
-      POSTGRES_DB: contra_dengue
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: hmTpKwBbfDAFS2SlaX75V6pbqhZbVb
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
       - contra-dengue-db-data:/var/lib/postgresql/data
     ports:
