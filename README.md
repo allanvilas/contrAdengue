@@ -21,6 +21,24 @@ Curso de Tecnologia em Análise e Desenvolvimento de Sistemas
   </a>
 </div>
 
+<div style="display:flex; justify-content:center;">
+  <a style="
+            background-color: #4989d1;
+            color: #fff;
+            border-radius: 4px;
+            text-align: center;
+            padding: 12px 20px 12px 20px;
+            background-color: #4989d1;
+            color: #fff;
+            border-radius: 4px;
+            font-size: 1.5em;
+            text-shadow: 2px 2px 5px #112338;
+            text-decoration-line: none;
+            text-align: center;" href="https://www.figma.com/design/jrMZBPkv3cLBLKIY8A7Cpp/Contradengue-APP?node-id=0-1&p=f" target="_blank">
+      Clique aqui para visualizar o protótipo mobile.
+  </a>
+</div>
+
 ## 👥 Integrantes do Grupo
 
 - Allan Vilas Boas  
